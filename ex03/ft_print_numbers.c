@@ -6,30 +6,31 @@
 /*   By: ockap <ockap@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/19 15:09:00 by ockap             #+#    #+#             */
-/*   Updated: 2023/04/19 15:17:09 by ockap            ###   ########.fr       */
+/*   Updated: 2023/04/24 09:55:42 by ockap            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 
-void    ft_putchar(int c)
+void	ft_putchar(int c)
 {
-    write(1, &c, 1);
+	write(1, &c, 1);
 }
 
-void    ft_print_number(void)
+voidft_print_number(void)
 {
-    char    c;
-    c = '0';
-    while (c <= '9')
-    {
-        ft_putchar(c);
-        c+=1;
-    }
+	char	c;
+
+	c = '0';
+	while (c <= '9')
+	{
+		ft_putchar(c);
+		c+=1;
+	}
 }
 
-int     main(void)
+int	main(void)
 {
-    ft_print_number();
-    return (0);
+	ft_print_number();
+	return (0);
 }
